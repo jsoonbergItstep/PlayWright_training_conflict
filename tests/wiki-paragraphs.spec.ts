@@ -10,7 +10,7 @@ async function openRandomRussianArticle(page) {
   await wiki.openRandomArticle();
 }
 
-test('Статья содержит хотя бы один непустой абзац', async ({ page }) => {
+test('Статья содержит хотя бы один непустой параграф (branch task/conflict_Sh)', async ({ page }) => {
   await openRandomRussianArticle(page);
 
   // Ждём появления хотя бы одного <p> на странице
